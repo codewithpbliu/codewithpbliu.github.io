@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+
+    <!-- Google Ads -->
+    <meta name="google-adsense-account" content="ca-pub-4683024546809482" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: "pbliu's Novel",
+        // coverpage:true,
+        loadNavbar: true,
+        loadSidebar: true,
+        // maxLevel: 6,
+        repo: 'https://github.com/codewithpbliu/codewithpbliu.github.io',
+        subMaxLevel: 3,
+        auto2top: false,
+        // routerMode: 'history',
+        alias: {
+          '/.*/_sidebar.md': '/_sidebar.md',
+        },
+        toc: {
+          scope: '.markdown-section',
+          headings: 'h1, h2, h3, h4',
+          title: '快速跳转',
+        },
+        pagination: {
+          previousText: '上一章节',
+          nextText: '下一章节',
+          crossChapter: true,
+          crossChapterText: true,
+        },
+        search: {
+          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+          paths: [], // or 'auto'
+          placeholder: 'Type to search',
+
+          // 支持本地化
+          placeholder: {
+            '/zh-cn/': '搜索',
+            '/': 'Type to search',
+          },
+
+          noData: 'No Results!',
+
+          // 支持本地化
+          noData: {
+            '/zh-cn/': '找不到结果',
+            '/': 'No Results',
+          },
+
+          // 搜索标题的最大程级, 1 - 6
+          depth: 2,
+        },
+        copyCode: {
+          // buttonText : 'buttonText:String',
+          // errorText : 'errorText:String',
+          // successText: 'successText:String'
+
+          buttonText: {
+            '/zh-cn/': '点击复制',
+            '/ru/': 'Скопировать в буфер обмена',
+            '/de-de/': 'Klicken Sie zum Kopieren',
+            '/es/': 'Haga clic para copiar',
+            '/': 'Copy to clipboard',
+          },
+          errorText: {
+            '/zh-cn/': '错误',
+            '/ru/': 'ошибка',
+            '/': 'Error',
+          },
+          successText: {
+            '/zh-cn/': '复制',
+            '/ru/': 'Скопировано',
+            '/de-de/': 'Kopiert',
+            '/es/': 'Copiado',
+            '/': 'Copied',
+          },
+        },
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7C9N3LDDJP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-7C9N3LDDJP');
+    </script>
+  </body>
+</html>
